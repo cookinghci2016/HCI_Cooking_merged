@@ -62,16 +62,19 @@ extension CategoryRow : UICollectionViewDataSource {
         // Choose Background colors based on a global dictionary
         let shared_instance = Meat_Singleton.shared_instance
         if shared_instance.selected_meat[section_name]?.contains(cell.img_name) == true{
-            cell.backgroundColor = UIColor.greenColor()
+//            cell.backgroundColor = UIColor.greenColor()
+            cell.backgroundView = UIImageView(image: UIImage(named:"check_img_2"))
+
         }
         else {
             // Very Very Important!!! Initialize Dictionary with empty values;
             if shared_instance.selected_meat[section_name] == nil {
                 shared_instance.selected_meat[section_name] = []
             }
-            cell.backgroundColor = UIColor.whiteColor()
+//            cell.backgroundColor = UIColor.whiteColor()
+            cell.backgroundView = nil
+
         }
-        
         return cell
     }
     
@@ -80,7 +83,9 @@ extension CategoryRow : UICollectionViewDataSource {
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! IngPhotoCell
         let shared_instance = Meat_Singleton.shared_instance
         if shared_instance.selected_meat[section_name]?.contains(cell.img_name) == true{
-            cell.backgroundColor = UIColor.whiteColor()
+//            cell.backgroundColor = UIColor.whiteColor()
+            cell.backgroundView = nil
+
             shared_instance.selected_meat[section_name]?.removeAtIndex((shared_instance.selected_meat[section_name]?.indexOf(cell.img_name))!)
 //            print("变暗位置")
 //            print(indexPath.section)
@@ -88,7 +93,9 @@ extension CategoryRow : UICollectionViewDataSource {
         }
         else {
             shared_instance.selected_meat[section_name]?.append(cell.img_name)
-            cell.backgroundColor = UIColor.greenColor()
+//            cell.backgroundColor = UIColor.greenColor()
+            cell.backgroundView = UIImageView(image: UIImage(named:"check_img_2"))
+
 //            print("点亮位置")
 //            print(indexPath.section)
 //            print(indexPath.row)

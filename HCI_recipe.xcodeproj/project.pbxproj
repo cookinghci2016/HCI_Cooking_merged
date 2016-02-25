@@ -315,7 +315,7 @@
 				TargetAttributes = {
 					8BB3B2CD1C72C5CA00DC97B4 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 6T4W53NV2H;
+						DevelopmentTeam = FDXE4B3766;
 					};
 					8BB3B2E11C72C5CA00DC97B4 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -547,9 +547,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HCI_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CS189.HCI-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "ICook-HCI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -558,9 +559,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HCI_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "CS189.HCI-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "ICook-HCI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
