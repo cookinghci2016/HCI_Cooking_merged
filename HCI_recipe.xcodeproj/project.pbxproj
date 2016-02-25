@@ -10,6 +10,7 @@
 		40507C1E1C7BCEB1009677A5 /* MeatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40507C1D1C7BCEB1009677A5 /* MeatController.swift */; };
 		4068D5081C7E833A0008B98F /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4068D5061C7E833A0008B98F /* mainViewController.swift */; };
 		4068D5091C7E833A0008B98F /* recipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4068D5071C7E833A0008B98F /* recipeCollectionViewCell.swift */; };
+		4068D50B1C7EB6190008B98F /* SearchByNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4068D50A1C7EB6190008B98F /* SearchByNameTableViewController.swift */; };
 		409E78EF1C7AF1E4005FC434 /* ingserch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E78EE1C7AF1E4005FC434 /* ingserch.swift */; };
 		409E78FA1C7BC688005FC434 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E78F91C7BC688005FC434 /* CategoryRow.swift */; };
 		40DE690D1C79178A008390B8 /* SearchByIngController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE690C1C79178A008390B8 /* SearchByIngController.swift */; };
@@ -58,6 +59,7 @@
 		40507C1D1C7BCEB1009677A5 /* MeatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatController.swift; sourceTree = "<group>"; };
 		4068D5061C7E833A0008B98F /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		4068D5071C7E833A0008B98F /* recipeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4068D50A1C7EB6190008B98F /* SearchByNameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByNameTableViewController.swift; sourceTree = "<group>"; };
 		409E78EE1C7AF1E4005FC434 /* ingserch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingserch.swift; sourceTree = "<group>"; };
 		409E78F91C7BC688005FC434 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		40DE690C1C79178A008390B8 /* SearchByIngController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByIngController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				40DE690C1C79178A008390B8 /* SearchByIngController.swift */,
 				40507C1D1C7BCEB1009677A5 /* MeatController.swift */,
 				40FDEFCD1C7E6132004D2EA5 /* Meat_Singleton.swift */,
+				4068D50A1C7EB6190008B98F /* SearchByNameTableViewController.swift */,
 				40FDEFC91C7E5290004D2EA5 /* Shared_data.swift */,
 			);
 			name = Controller;
@@ -387,6 +390,7 @@
 				8BB3B2D41C72C5CA00DC97B4 /* RecipeViewController.swift in Sources */,
 				4068D5091C7E833A0008B98F /* recipeCollectionViewCell.swift in Sources */,
 				8BF4DEC11C77A2BD00E96EF8 /* drawUIView.swift in Sources */,
+				4068D50B1C7EB6190008B98F /* SearchByNameTableViewController.swift in Sources */,
 				8BB3B2D21C72C5CA00DC97B4 /* AppDelegate.swift in Sources */,
 				40DE69591C7A6AFE008390B8 /* SeaController.swift in Sources */,
 				40FDEFC61C7C4610004D2EA5 /* IngPhotoCell.swift in Sources */,
