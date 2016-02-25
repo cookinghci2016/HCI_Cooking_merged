@@ -32,6 +32,8 @@ class SearchByIngController: UIViewController, UICollectionViewDataSource,UIColl
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+                let shared_instance = Meat_Singleton.shared_instance
+                shared_instance.selected_meat.removeAll()
 
     }
 
