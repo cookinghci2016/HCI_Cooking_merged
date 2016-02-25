@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class MeatController: UIViewController,UITableViewDataSource {
     var allmeat = [IngridentTypes]()
@@ -14,18 +15,8 @@ class MeatController: UIViewController,UITableViewDataSource {
     @IBOutlet weak var numLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
    
-    // 废弃 ？ Store those slected items; 用两层的dictionary
-//    var selectedIng = [String:[String]](){
-    var seletedIng = Meat_Singleton.shared_instance.selected_meat{
-        didSet {
-            print("variable binding")
-            //updateCountingNumber()
-        }
-    }
-    
     //searchBarRelated
     var filteredMeat = [IngridentTypes]()
-    //END
     
     func filterContentForSearchText(searchText: String, scope: String = "All"){
         filteredMeat = allmeat.filter{ meat in return meat.Ingtype.lowercaseString.containsString(searchText.lowercaseString)
@@ -44,13 +35,12 @@ class MeatController: UIViewController,UITableViewDataSource {
         // Delet all elements during initialization of MeatController
         let shared_instance = Meat_Singleton.shared_instance
         shared_instance.selected_meat.removeAll()
-        
+          
     }
     
     //Search Bar Related
     //var detailViewController:DetailedController? = nil
     let searchController = UISearchController(searchResultsController: nil)
-    //ENd
     
     // Iterate Through dictionary and get the value of selected items
 //    func updateCountingNumber() {
@@ -96,19 +86,6 @@ class MeatController: UIViewController,UITableViewDataSource {
         }
     }
     
-//    // Failed: Center Section Name for each cell; Must have two sections
-//    func tablevIEW(tableView: UITableView, viewForHeaderInSection section: Int)-> UIView? {
-//        var title : UILabel = UILabel()
-//        title.text = "Hello"
-//        title.textColor = UIColor(red: 77.0/255.0, green: 98.0/255.0, blue: 130.0/255.0, alpha: 1.0)
-//        title.backgroundColor = UIColor(red: 225.0/255.0, green: 243.0/255.0, blue: 251.0/255.0, alpha: 1.0)
-//        title.font = UIFont.boldSystemFontOfSize(10)
-//        var constraint = NSLayoutConstraint.constraintsWithVisualFormat("H:[label]", options: NSLayoutFormatOptions.AlignAllCenterX, metrics: nil, views: ["label": title])
-//        title.textAlignment = NSTextAlignment.Center
-//        title.addConstraints(constraint)
-//        return title
-//    }
-    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         //return allmeat.count
@@ -129,7 +106,8 @@ class MeatController: UIViewController,UITableViewDataSource {
         // Get current row and assign item numbers
         //let cur_meat = allmeat[indexPath.section]
         var cur_meat: IngridentTypes
-    
+        
+        // Assign image array to UItable View Cell; Including the Image for ingredient, ox, pork, chicken and etc.
         if searchController.active && searchController.searchBar.text != ""{
             cur_meat = filteredMeat[indexPath.section]
             cell.num_sec = cur_meat.sub_imgs.count;
@@ -144,25 +122,28 @@ class MeatController: UIViewController,UITableViewDataSource {
             cell.nm = allmeat[indexPath.section].sub_names
             cell.section_name = allmeat[indexPath.section].Ingtype
         }
-        
-        
-        //        print("I am here, count =")
-        //        print(indexPath.section)
-        
-        // Assign image array to UItable View Cell; Including the Image for ingredient, ox, pork, chicken and etc.
-        //cell.dic = allmeat[indexPath.section].sub_imgs
-        //cell.nm = allmeat[indexPath.section].sub_names
-//        if searchController.active && searchController.searchBar.text != ""{
-//            //cur_meat = filteredMeat[indexPath.section]
-//            cell.dic = filteredMeat[indexPath.section].sub_imgs
-//            cell.nm = filteredMeat[indexPath.section].sub_names
-//        } else {
-//            cell.dic = allmeat[indexPath.section].sub_imgs
-//            cell.nm = allmeat[indexPath.section].sub_names
-//        }
         return cell
-    }
+}
     
+    // Close Key board when finish entering
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
+    //    // Failed: Center Section Name for each cell; Must have two sections
+    //    func tablevIEW(tableView: UITableView, viewForHeaderInSection section: Int)-> UIView? {
+    //        var title : UILabel = UILabel()
+    //        title.text = "Hello"
+    //        title.textColor = UIColor(red: 77.0/255.0, green: 98.0/255.0, blue: 130.0/255.0, alpha: 1.0)
+    //        title.backgroundColor = UIColor(red: 225.0/255.0, green: 243.0/255.0, blue: 251.0/255.0, alpha: 1.0)
+    //        title.font = UIFont.boldSystemFontOfSize(10)
+    //        var constraint = NSLayoutConstraint.constraintsWithVisualFormat("H:[label]", options: NSLayoutFormatOptions.AlignAllCenterX, metrics: nil, views: ["label": title])
+    //        title.textAlignment = NSTextAlignment.Center
+    //        title.addConstraints(constraint)
+    //        return title
+    //    }
+
+
     // Update Collected strings by trigging Row select Event;
     
 //    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -171,12 +152,6 @@ class MeatController: UIViewController,UITableViewDataSource {
 //            print("Value Uploarded")
 //    }
 
-    
-    
-    // Close Key board when finish entering
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        self.view.endEditing(true)
-    }
     
     
     //Search Related

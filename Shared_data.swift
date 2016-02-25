@@ -12,7 +12,6 @@ import Foundation
 class Shared_data {
     var num:Int = 1
     var selectedIng = [String:[String]]()
-
     static let instance = Shared_data()
     private init() {}
 }

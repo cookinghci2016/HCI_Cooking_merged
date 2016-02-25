@@ -10,6 +10,7 @@ import UIKit
 
 class IngPhotoCell: UICollectionViewCell {
     var section_name : String = ""
+    var img_name : String = ""
     @IBOutlet weak var Img_View: UIImageView!
     @IBOutlet weak var nameSub: UILabel!
     

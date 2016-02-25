@@ -12,15 +12,15 @@
             <objects>
                 <tableViewController id="xyt-23-Tjz" customClass="MealTableViewController" customModule="HCI_recipe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="YKJ-Df-BI1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="120" id="Ufu-eR-oBc" customClass="MealTableViewCell" customModule="HCI_recipe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ufu-eR-oBc" id="sAl-KM-uTk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BOL-js-SJD">
@@ -1024,7 +1024,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PqJ-Jf-WCL">
-                                        <rect key="frame" x="17" y="0.0" width="262" height="458"/>
+                                        <rect key="frame" x="17" y="64" width="262" height="458"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="262" height="458"/>
@@ -1114,7 +1114,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="83" id="l8I-fJ-IBb" customClass="CategoryRow" customModule="HCI_recipe">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l8I-fJ-IBb" id="yc8-z4-0Tb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
@@ -1201,7 +1201,7 @@
                                     <outlet property="delegate" destination="p6M-KA-aMM" id="oh3-OE-ePq"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mm-M6-qqA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mm-M6-qqA">
                                 <rect key="frame" x="0.0" y="0.0" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1552,9 +1552,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Search"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="172" y="527" width="57" height="34"/>
-                                </variation>
                                 <connections>
                                     <action selector="search:" destination="V9i-e7-rQG" eventType="touchUpInside" id="bTF-ab-67J"/>
                                 </connections>
@@ -1563,9 +1560,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Recipe Name"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="42" y="527" width="108" height="34"/>
-                                </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently liked recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51q-Zi-8da">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -1593,9 +1587,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Ingredients"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="252" y="528" width="91" height="34"/>
-                                </variation>
                                 <connections>
                                     <segue destination="OYI-n5-2BH" kind="show" id="MY9-54-omt"/>
                                 </connections>
@@ -1641,17 +1632,17 @@
                                 <exclude reference="kZs-CQ-lyz"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="BlN-lv-c1n"/>
-                                <exclude reference="AsH-OA-X5t"/>
                                 <exclude reference="0OZ-AC-cBh"/>
-                                <exclude reference="kHb-fl-jfX"/>
+                                <exclude reference="AsH-OA-X5t"/>
+                                <exclude reference="BlN-lv-c1n"/>
                                 <exclude reference="xAl-VZ-c4j"/>
+                                <exclude reference="kHb-fl-jfX"/>
                                 <exclude reference="K55-Xq-QRQ"/>
-                                <exclude reference="Yfo-d5-jGy"/>
                                 <exclude reference="3c5-5g-dwc"/>
-                                <exclude reference="dXw-lr-QIT"/>
+                                <exclude reference="Yfo-d5-jGy"/>
                                 <exclude reference="03y-13-6gO"/>
                                 <exclude reference="cMz-bm-wcW"/>
+                                <exclude reference="dXw-lr-QIT"/>
                                 <exclude reference="dyo-B8-2cc"/>
                             </mask>
                         </variation>
@@ -1664,17 +1655,17 @@
                                 <include reference="kZs-CQ-lyz"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="BlN-lv-c1n"/>
-                                <include reference="AsH-OA-X5t"/>
                                 <include reference="0OZ-AC-cBh"/>
-                                <include reference="kHb-fl-jfX"/>
+                                <include reference="AsH-OA-X5t"/>
+                                <include reference="BlN-lv-c1n"/>
                                 <include reference="xAl-VZ-c4j"/>
+                                <include reference="kHb-fl-jfX"/>
                                 <include reference="K55-Xq-QRQ"/>
-                                <include reference="Yfo-d5-jGy"/>
                                 <include reference="3c5-5g-dwc"/>
-                                <exclude reference="dXw-lr-QIT"/>
+                                <include reference="Yfo-d5-jGy"/>
                                 <exclude reference="03y-13-6gO"/>
                                 <include reference="cMz-bm-wcW"/>
+                                <exclude reference="dXw-lr-QIT"/>
                                 <include reference="dyo-B8-2cc"/>
                             </mask>
                         </variation>
