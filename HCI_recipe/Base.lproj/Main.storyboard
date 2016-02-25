@@ -144,9 +144,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Overview"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="35" y="86" width="64" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="gotoOverview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1G-RZ-Qe1"/>
                                 </connections>
@@ -155,9 +152,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Ingredients"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="162" y="86" width="77" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="gotoIngredient:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGL-oH-DZX"/>
                                 </connections>
@@ -166,9 +160,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Steps"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="313" y="86" width="40" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="gotoStep:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdr-4b-1Kf"/>
                                 </connections>
@@ -181,9 +172,6 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="36" y="303" width="164" height="21"/>
-                                        </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-lE-1EA">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -196,17 +184,11 @@
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="16"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="49" y="358" width="35" height="21"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tng-Uz-FcB">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="236" y="358" width="60" height="23"/>
-                                        </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxk-dA-HHX">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -240,18 +222,12 @@
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="14" y="6" width="66" height="17"/>
-                                                            </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-60-otM">
                                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="234" y="6" width="48" height="17"/>
-                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
@@ -304,8 +280,7 @@
                                                 <exclude reference="n5i-Zu-ar2"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="34" y="424" width="332" height="256"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="gR8-i1-WNd"/>
                                                 <exclude reference="iX4-ZF-jqN"/>
@@ -322,42 +297,27 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="34" y="398" width="94" height="21"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1k7-s3-DWx">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="34" y="715" width="48" height="21"/>
-                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description: bla bla bla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8m-MU-7xB">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="36" y="320" width="148" height="17"/>
-                                        </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77f-Qy-JHm">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" image="cart"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="271" y="671" width="50" height="50"/>
-                                        </variation>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flavor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WoW-Mi-ML6">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="138" y="358" width="47" height="23"/>
-                                        </variation>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="300" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gzU-DU-Vpf">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -412,8 +372,7 @@
                                                                     <exclude reference="h7L-DC-Rs2"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="158" y="140" width="50" height="42"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="c6H-RP-TEY"/>
                                                                     <include reference="h7L-DC-Rs2"/>
@@ -433,8 +392,7 @@
                                                                     <exclude reference="6vp-l3-Vxk"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="25" y="157" width="36" height="23"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="6vp-l3-Vxk"/>
                                                                 </mask>
@@ -469,9 +427,6 @@
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="14" y="151" width="39" height="18"/>
-                                                            </variation>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-hE-5f2" customClass="drawUIView" customModule="HCI_recipe" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -481,18 +436,12 @@
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
-                                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="45" y="21" width="31" height="15"/>
-                                                                    </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-YK-aRq">
                                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
-                                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="31" y="1" width="59" height="17"/>
-                                                                    </variation>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -558,18 +507,12 @@
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
-                                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="36" y="27" width="38" height="18"/>
-                                                                    </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6F-b8-qOV">
                                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
-                                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="39" y="0.0" width="34" height="17"/>
-                                                                    </variation>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOj-wp-NId">
                                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -780,8 +723,7 @@
                                                 <exclude reference="ezN-Hc-CfU"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="34" y="741" width="341" height="1374"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="Y5j-JM-fup"/>
                                                 <include reference="ezN-Hc-CfU"/>
@@ -912,7 +854,7 @@
                                         <exclude reference="cOY-Rr-3Lg"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" ambiguous="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="71" width="400" height="1929"/>
                                     <mask key="subviews">
                                         <include reference="eR3-Sh-dky"/>
@@ -963,9 +905,6 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="149" y="64" width="102" height="21"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1061,7 +1000,7 @@
         <!--Cutting Board-->
         <scene sceneID="88E-52-RFh">
             <objects>
-                <viewController id="OYI-n5-2BH" customClass="SearchByIngController" customModule="HCI_recipe" sceneMemberID="viewController">
+                <viewController id="OYI-n5-2BH" customClass="SearchByIngController" customModule="HCI_recipe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0fg-Lk-grW"/>
                         <viewControllerLayoutGuide type="bottom" id="wGO-gX-Pj2"/>
@@ -1114,7 +1053,7 @@
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VPA-aV-Vb3">
                                 <rect key="frame" x="40" y="61" width="296" height="487"/>
-                                <color key="backgroundColor" red="0.63529411759999999" green="0.4823529412" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aCe-JZ-u1t">
                                     <size key="itemSize" width="89" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -1122,7 +1061,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PqJ-Jf-WCL">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="boardcell" id="PqJ-Jf-WCL" customClass="CuttingBoardCell" customModule="HCI_recipe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="89" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -1150,13 +1089,17 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <outlet property="backgroundView" destination="jiX-Ff-JV1" id="ENJ-UT-262"/>
+                                            <outlet property="DisplayButton" destination="wZi-AM-pMx" id="amB-g3-LXW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="32" y="95" width="323" height="459"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="OYI-n5-2BH" id="zhx-nJ-fOH"/>
+                                    <outlet property="delegate" destination="OYI-n5-2BH" id="pjX-k6-cSs"/>
+                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-dR-Dd1">
                                 <rect key="frame" x="342" y="292" width="30" height="30"/>
@@ -1171,8 +1114,12 @@
                     <navigationItem key="navigationItem" title="Cutting Board" id="6cY-DI-Vwk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="Fruit" destination="Zzq-Df-KyV" id="rCV-IT-bc9"/>
+                        <outlet property="Meat" destination="laM-RQ-K2W" id="4wM-bq-qQB"/>
                         <outlet property="Sea" destination="e79-16-f8P" id="5Qp-bI-oHF"/>
+                        <outlet property="Veg" destination="Fkh-zE-fY7" id="Qmj-zK-sGQ"/>
                         <outlet property="Yummy" destination="Xsr-WH-EdO" id="epF-vn-6cL"/>
+                        <outlet property="collectionView" destination="VPA-aV-Vb3" id="bod-sS-jsf"/>
                         <outlet property="fruit" destination="Zzq-Df-KyV" id="BEz-Rf-mpU"/>
                         <outlet property="meat" destination="laM-RQ-K2W" id="yl2-PG-2yj"/>
                         <outlet property="veg" destination="Fkh-zE-fY7" id="f6H-Fg-Ib4"/>
@@ -1216,7 +1163,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IngCell" id="qbL-VQ-FoG" customClass="IngPhotoCell" customModule="HCI_recipe" customModuleProvider="target">
-                                                            <rect key="frame" x="5" y="-1" width="70" height="73"/>
+                                                            <rect key="frame" x="5" y="1" width="60" height="70"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
@@ -1312,7 +1259,18 @@
                                     <rect key="frame" x="162" y="581" width="51" height="51"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="OYI-n5-2BH" kind="show" id="6Iq-4M-ngq"/>
+                                    <segue destination="OYI-n5-2BH" kind="show" identifier="completeSelection" id="6Iq-4M-ngq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctO-8x-Jd2" userLabel="test_return">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="596" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="back:" destination="p6M-KA-aMM" eventType="touchUpInside" id="6rL-42-kma"/>
+                                    <segue destination="vbA-77-UyM" kind="unwind" identifier="dataBack" unwindAction="unwindToViewController:" id="Whv-Wt-gHq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1323,6 +1281,7 @@
                                 <exclude reference="4Mm-M6-qqA"/>
                                 <exclude reference="blg-Wa-3Wc"/>
                                 <exclude reference="5x7-J2-vWY"/>
+                                <exclude reference="ctO-8x-Jd2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1330,6 +1289,7 @@
                                 <include reference="4Mm-M6-qqA"/>
                                 <include reference="blg-Wa-3Wc"/>
                                 <include reference="5x7-J2-vWY"/>
+                                <include reference="ctO-8x-Jd2"/>
                             </mask>
                         </variation>
                     </view>
@@ -1340,6 +1300,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbO-Rn-KXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vbA-77-UyM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-560.25" y="1318.5"/>
         </scene>
@@ -1536,9 +1497,15 @@
                         <viewControllerLayoutGuide type="bottom" id="YxR-jd-Paa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MuI-mr-LCg">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_page" translatesAutoresizingMaskIntoConstraints="NO" id="zql-Jc-hfP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-3" y="0.0" width="383" height="667"/>
+                                </variation>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cau-ZY-rZD">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1636,16 +1603,22 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgF-8y-jvu">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Search"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="168" y="594" width="57" height="34"/>
+                                </variation>
                                 <connections>
                                     <action selector="search:" destination="V9i-e7-rQG" eventType="touchUpInside" id="bTF-ab-67J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36a-Gv-zEA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Recipe Name"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="38" y="594" width="108" height="34"/>
+                                </variation>
                                 <connections>
                                     <segue destination="QXB-rY-Yko" kind="show" id="BKz-QQ-bdx"/>
                                 </connections>
@@ -1674,10 +1647,13 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZs-CQ-lyz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Ingredients"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="248" y="595" width="91" height="34"/>
+                                </variation>
                                 <connections>
-                                    <segue destination="OYI-n5-2BH" kind="show" id="MY9-54-omt"/>
+                                    <segue destination="OYI-n5-2BH" kind="show" id="4Wk-Ex-47R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1714,6 +1690,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="zql-Jc-hfP"/>
                                 <exclude reference="Cau-ZY-rZD"/>
                                 <exclude reference="OgF-8y-jvu"/>
                                 <exclude reference="36a-Gv-zEA"/>
@@ -1737,6 +1714,7 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="zql-Jc-hfP"/>
                                 <include reference="Cau-ZY-rZD"/>
                                 <include reference="OgF-8y-jvu"/>
                                 <include reference="36a-Gv-zEA"/>
@@ -1770,7 +1748,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Deb-I2-4fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1029" y="422"/>
+            <point key="canvasLocation" x="-1029.75" y="421.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="plj-76-FGd">
@@ -1799,7 +1777,7 @@
                         <viewControllerLayoutGuide type="bottom" id="piW-tH-jNg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="flS-SA-4LF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ndI-5m-ANX">
@@ -1832,30 +1810,31 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="115" y="49" width="144" height="81"/>
+                                    <rect key="frame" x="115" y="70" width="144" height="81"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you a vagetarian?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJF-k2-ZwQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you a vagetarian?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJF-k2-ZwQ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="105" y="145" width="164" height="26"/>
+                                    <rect key="frame" x="88" y="164" width="198" height="28"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like spicy?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eu-Ud-ZJc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your religion?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6u-pF-IN9">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="313" width="174" height="21"/>
+                                    <rect key="frame" x="91" y="245" width="192" height="27"/>
                                 </variation>
                             </label>
                             <switch opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8Y-3W-zJN">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <color key="onTintColor" red="0.20868351500000001" green="0.54730902780000001" blue="0.3053625921" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="163" y="179" width="51" height="31"/>
+                                    <rect key="frame" x="163" y="200" width="51" height="31"/>
                                 </variation>
                             </switch>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XGm-LZ-7rK">
@@ -1865,14 +1844,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="259" width="97" height="30"/>
+                                    <rect key="frame" x="139" y="280" width="97" height="30"/>
                                 </variation>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="22G-sF-ARf">
                                 <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.20868351500000001" green="0.54730902780000001" blue="0.3053625921" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="128" y="342" width="118" height="31"/>
+                                    <rect key="frame" x="128" y="363" width="118" height="31"/>
                                 </variation>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vg-6Y-zs2">
@@ -1881,16 +1860,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="91" y="285" width="192" height="21"/>
+                                    <rect key="frame" x="91" y="306" width="192" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your religion?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6u-pF-IN9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like spicy?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eu-Ud-ZJc">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="105" y="230" width="164" height="21"/>
+                                    <rect key="frame" x="85" y="327" width="205" height="28"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -1901,12 +1879,12 @@
                                 <exclude reference="qiO-db-JFg"/>
                                 <exclude reference="p5n-4w-PEt"/>
                                 <exclude reference="pJF-k2-ZwQ"/>
-                                <exclude reference="7Eu-Ud-ZJc"/>
+                                <exclude reference="h6u-pF-IN9"/>
                                 <exclude reference="O8Y-3W-zJN"/>
                                 <exclude reference="XGm-LZ-7rK"/>
                                 <exclude reference="22G-sF-ARf"/>
                                 <exclude reference="7vg-6Y-zs2"/>
-                                <exclude reference="h6u-pF-IN9"/>
+                                <exclude reference="7Eu-Ud-ZJc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1915,12 +1893,12 @@
                                 <include reference="qiO-db-JFg"/>
                                 <include reference="p5n-4w-PEt"/>
                                 <include reference="pJF-k2-ZwQ"/>
-                                <include reference="7Eu-Ud-ZJc"/>
+                                <include reference="h6u-pF-IN9"/>
                                 <include reference="O8Y-3W-zJN"/>
                                 <include reference="XGm-LZ-7rK"/>
                                 <include reference="22G-sF-ARf"/>
                                 <include reference="7vg-6Y-zs2"/>
-                                <include reference="h6u-pF-IN9"/>
+                                <include reference="7Eu-Ud-ZJc"/>
                             </mask>
                         </variation>
                     </view>
@@ -1939,7 +1917,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fbd-l0-ZcV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TnO-9X-pyM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Ras-Nu-LKf">
@@ -1955,32 +1933,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="216" width="97" height="30"/>
+                                    <rect key="frame" x="139" y="240" width="97" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of Salty/Sweet Preference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jde-t6-6P2">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                <nil key="highlightedColor"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="G0B-q6-emb">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.20868351500000001" green="0.54730902780000001" blue="0.3053625921" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="68" y="314" width="239" height="21"/>
+                                    <rect key="frame" x="128" y="366" width="118" height="31"/>
                                 </variation>
-                            </label>
+                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFG-G3-JQT">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="91" y="278" width="192" height="21"/>
+                                    <rect key="frame" x="91" y="302" width="192" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any Food You Wanna Get Rid of?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5G-n3-r4d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any Food You Wanna Get Rid of?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5G-n3-r4d">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="60" y="145" width="254" height="21"/>
+                                    <rect key="frame" x="40" y="164" width="294" height="22"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sk4-dZ-3jc">
@@ -1990,7 +1967,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="178" width="97" height="30"/>
+                                    <rect key="frame" x="139" y="202" width="97" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzR-qw-hbz">
@@ -2000,7 +1977,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="252" width="97" height="30"/>
+                                    <rect key="frame" x="139" y="276" width="97" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ags-L9-Cm8">
@@ -2025,44 +2002,45 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="115" y="49" width="144" height="81"/>
+                                    <rect key="frame" x="115" y="70" width="144" height="81"/>
                                 </variation>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="G0B-q6-emb">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <color key="minimumTrackTintColor" red="0.20868351500000001" green="0.54730902780000001" blue="0.3053625921" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level of Salty/Sweet Preference" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jde-t6-6P2">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="128" y="342" width="118" height="31"/>
+                                    <rect key="frame" x="49" y="325" width="277" height="27"/>
                                 </variation>
-                            </slider>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Ras-Nu-LKf"/>
                                 <exclude reference="gvG-32-GRW"/>
-                                <exclude reference="Jde-t6-6P2"/>
+                                <exclude reference="G0B-q6-emb"/>
                                 <exclude reference="sFG-G3-JQT"/>
                                 <exclude reference="w5G-n3-r4d"/>
                                 <exclude reference="Sk4-dZ-3jc"/>
                                 <exclude reference="nzR-qw-hbz"/>
                                 <exclude reference="ags-L9-Cm8"/>
                                 <exclude reference="ifB-Kk-CFZ"/>
-                                <exclude reference="G0B-q6-emb"/>
+                                <exclude reference="Jde-t6-6P2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Ras-Nu-LKf"/>
                                 <include reference="gvG-32-GRW"/>
-                                <include reference="Jde-t6-6P2"/>
+                                <include reference="G0B-q6-emb"/>
                                 <include reference="sFG-G3-JQT"/>
                                 <include reference="w5G-n3-r4d"/>
                                 <include reference="Sk4-dZ-3jc"/>
                                 <include reference="nzR-qw-hbz"/>
                                 <include reference="ags-L9-Cm8"/>
                                 <include reference="ifB-Kk-CFZ"/>
-                                <include reference="G0B-q6-emb"/>
+                                <include reference="Jde-t6-6P2"/>
                             </mask>
                         </variation>
                     </view>
@@ -2080,7 +2058,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rzy-6T-9R5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gcy-cP-EFZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i3k-5V-u4I">
@@ -2095,7 +2073,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="270" text="Chicken papa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SHo-BB-54j">
-                                                    <rect key="frame" x="92" y="7" width="105" height="21"/>
+                                                    <rect key="frame" x="106" y="7" width="105" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2105,7 +2083,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="280" text="A delicious meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ANQ-0d-rRO">
-                                                    <rect key="frame" x="92" y="28" width="125" height="21"/>
+                                                    <rect key="frame" x="106" y="28" width="119" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2115,7 +2093,7 @@
                                                     </variation>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Chicken_Parmesan" id="G1f-2Q-Ghb">
-                                                    <rect key="frame" x="15" y="0.0" width="62" height="55"/>
+                                                    <rect key="frame" x="15" y="0.0" width="76" height="55"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -2159,6 +2137,7 @@
         <image name="Cancel" width="50" height="50"/>
         <image name="Chicken_Parmesan" width="975" height="706"/>
         <image name="Fruiticon" width="50" height="50"/>
+        <image name="Home_page" width="588" height="907"/>
         <image name="Meaticon" width="50" height="50"/>
         <image name="Ok" width="50" height="50"/>
         <image name="Ox" width="50" height="50"/>
@@ -2175,7 +2154,7 @@
         <image name="tips" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QX0-De-nKo"/>
-        <segue reference="MY9-54-omt"/>
+        <segue reference="6Iq-4M-ngq"/>
+        <segue reference="c2F-YV-l8e"/>
     </inferredMetricsTieBreakers>
 </document>

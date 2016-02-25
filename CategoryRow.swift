@@ -63,7 +63,7 @@ extension CategoryRow : UICollectionViewDataSource {
         let shared_instance = Meat_Singleton.shared_instance
         if shared_instance.selected_meat[section_name]?.contains(cell.img_name) == true{
 //            cell.backgroundColor = UIColor.greenColor()
-            cell.backgroundView = UIImageView(image: UIImage(named:"check_img_2"))
+            cell.backgroundView = UIImageView(image: UIImage(named:"check_img_3"))
 
         }
         else {
@@ -94,7 +94,7 @@ extension CategoryRow : UICollectionViewDataSource {
         else {
             shared_instance.selected_meat[section_name]?.append(cell.img_name)
 //            cell.backgroundColor = UIColor.greenColor()
-            cell.backgroundView = UIImageView(image: UIImage(named:"check_img_2"))
+            cell.backgroundView = UIImageView(image: UIImage(named:"check_img_3"))
 
 //            print("点亮位置")
 //            print(indexPath.section)

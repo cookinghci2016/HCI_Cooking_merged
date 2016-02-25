@@ -13,6 +13,7 @@
 		4068D50B1C7EB6190008B98F /* SearchByNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4068D50A1C7EB6190008B98F /* SearchByNameTableViewController.swift */; };
 		409E78EF1C7AF1E4005FC434 /* ingserch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E78EE1C7AF1E4005FC434 /* ingserch.swift */; };
 		409E78FA1C7BC688005FC434 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E78F91C7BC688005FC434 /* CategoryRow.swift */; };
+		40BDCD9C1C7F738C0065324F /* CuttingBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BDCD9B1C7F738C0065324F /* CuttingBoardCell.swift */; };
 		40DE690D1C79178A008390B8 /* SearchByIngController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE690C1C79178A008390B8 /* SearchByIngController.swift */; };
 		40DE69111C795384008390B8 /* Viewtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE69101C795384008390B8 /* Viewtest.swift */; };
 		40DE69551C7A6AE4008390B8 /* VegController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE69541C7A6AE4008390B8 /* VegController.swift */; };
@@ -62,6 +63,7 @@
 		4068D50A1C7EB6190008B98F /* SearchByNameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByNameTableViewController.swift; sourceTree = "<group>"; };
 		409E78EE1C7AF1E4005FC434 /* ingserch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingserch.swift; sourceTree = "<group>"; };
 		409E78F91C7BC688005FC434 /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		40BDCD9B1C7F738C0065324F /* CuttingBoardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuttingBoardCell.swift; sourceTree = "<group>"; };
 		40DE690C1C79178A008390B8 /* SearchByIngController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByIngController.swift; sourceTree = "<group>"; };
 		40DE69101C795384008390B8 /* Viewtest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewtest.swift; sourceTree = "<group>"; };
 		40DE69541C7A6AE4008390B8 /* VegController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		40DE69091C791350008390B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				40BDCD9B1C7F738C0065324F /* CuttingBoardCell.swift */,
 				409E78F91C7BC688005FC434 /* CategoryRow.swift */,
 				40FDEFC51C7C4610004D2EA5 /* IngPhotoCell.swift */,
 			);
@@ -394,6 +397,7 @@
 				8BB3B2D21C72C5CA00DC97B4 /* AppDelegate.swift in Sources */,
 				40DE69591C7A6AFE008390B8 /* SeaController.swift in Sources */,
 				40FDEFC61C7C4610004D2EA5 /* IngPhotoCell.swift in Sources */,
+				40BDCD9C1C7F738C0065324F /* CuttingBoardCell.swift in Sources */,
 				8BB3B3001C73880C00DC97B4 /* IngredientCell.swift in Sources */,
 				8BEA8C131C7BFC72009B42C3 /* timerViewController.swift in Sources */,
 				4068D5081C7E833A0008B98F /* mainViewController.swift in Sources */,

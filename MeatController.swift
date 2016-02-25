@@ -15,6 +15,7 @@ class MeatController: UIViewController,UITableViewDataSource {
     @IBOutlet weak var numLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
    
+    
     //searchBarRelated
     var filteredMeat = [IngridentTypes]()
     
@@ -129,7 +130,35 @@ class MeatController: UIViewController,UITableViewDataSource {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+//    @IBAction func SendtoCB(sender: AnyObject) {
+//        let shared_instance = Meat_Singleton.shared_instance
+//        var temp : [String] = []
+//        for (mykey,_) in shared_instance.selected_meat {
+//            temp += shared_instance.selected_meat[mykey]!
+//        }
+//        self.performSegueWithIdentifier("completeSelection", sender: temp)
+//    }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "completeSelection" {
+            let DestViewController = segue.destinationViewController as! SearchByIngController
+//            DestViewController.all_selected_items = sender! as! [String]
+//            for (mykey,_) in shared_instance.selected_meat {
+//                    DestViewController.all_selected_items.insert(item)
+//            }
+            var temp : [String] = []
+            let shared_instance = Meat_Singleton.shared_instance
+            for (mykey,_) in shared_instance.selected_meat {
+                temp += shared_instance.selected_meat[mykey]!
+            }
+            DestViewController.all_selected_items += temp
+        }
+    }
+
+    @IBAction func back(segue: UIStoryboardSegue) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     //    // Failed: Center Section Name for each cell; Must have two sections
     //    func tablevIEW(tableView: UITableView, viewForHeaderInSection section: Int)-> UIView? {
     //        var title : UILabel = UILabel()
