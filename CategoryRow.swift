@@ -64,7 +64,6 @@ extension CategoryRow : UICollectionViewDataSource {
         if shared_instance.selected_meat[section_name]?.contains(cell.img_name) == true{
 //            cell.backgroundColor = UIColor.greenColor()
             cell.backgroundView = UIImageView(image: UIImage(named:"check_img_3"))
-
         }
         else {
             // Very Very Important!!! Initialize Dictionary with empty values;
@@ -93,9 +92,8 @@ extension CategoryRow : UICollectionViewDataSource {
         }
         else {
             shared_instance.selected_meat[section_name]?.append(cell.img_name)
-//            cell.backgroundColor = UIColor.greenColor()
+//          cell.backgroundColor = UIColor.greenColor()
             cell.backgroundView = UIImageView(image: UIImage(named:"check_img_3"))
-
 //            print("点亮位置")
 //            print(indexPath.section)
 //            print(indexPath.row)

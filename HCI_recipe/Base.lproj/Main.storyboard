@@ -121,7 +121,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="We found these for you" id="AyP-UM-9FP">
-                        <barButtonItem key="backBarButtonItem" title="bk" id="aYo-vP-hdE"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="aYo-vP-hdE" userLabel="Back"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugR-Ui-qKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -997,7 +997,7 @@
             </objects>
             <point key="canvasLocation" x="1425" y="677"/>
         </scene>
-        <!--Cutting Board-->
+        <!--Selected Items-->
         <scene sceneID="88E-52-RFh">
             <objects>
                 <viewController id="OYI-n5-2BH" customClass="SearchByIngController" customModule="HCI_recipe" customModuleProvider="target" sceneMemberID="viewController">
@@ -1023,6 +1023,9 @@
                                 <state key="normal" backgroundImage="Yum">
                                     <color key="titleColor" red="1" green="0.42454202636870308" blue="0.51187389911784464" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xyt-23-Tjz" kind="show" id="JN0-V3-Gyc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e79-16-f8P">
                                 <rect key="frame" x="251" y="607" width="40" height="40"/>
@@ -1070,7 +1073,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZi-AM-pMx">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Button" image="Pepper"/>
+                                                    <state key="normal" image="Pepper"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
                                                         <rect key="frame" x="0.0" y="0.0" width="89" height="80"/>
                                                     </variation>
@@ -1111,7 +1114,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cutting Board" id="6cY-DI-Vwk"/>
+                    <navigationItem key="navigationItem" title="Selected Items" id="6cY-DI-Vwk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Fruit" destination="Zzq-Df-KyV" id="rCV-IT-bc9"/>
@@ -1259,18 +1262,7 @@
                                     <rect key="frame" x="162" y="581" width="51" height="51"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="OYI-n5-2BH" kind="show" identifier="completeSelection" id="6Iq-4M-ngq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctO-8x-Jd2" userLabel="test_return">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="70" y="596" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="back:" destination="p6M-KA-aMM" eventType="touchUpInside" id="6rL-42-kma"/>
-                                    <segue destination="vbA-77-UyM" kind="unwind" identifier="dataBack" unwindAction="unwindToViewController:" id="Whv-Wt-gHq"/>
+                                    <segue destination="vbA-77-UyM" kind="unwind" identifier="dataBack" unwindAction="unwindToViewController:" id="z5u-S0-ZQn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1281,7 +1273,6 @@
                                 <exclude reference="4Mm-M6-qqA"/>
                                 <exclude reference="blg-Wa-3Wc"/>
                                 <exclude reference="5x7-J2-vWY"/>
-                                <exclude reference="ctO-8x-Jd2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1289,7 +1280,6 @@
                                 <include reference="4Mm-M6-qqA"/>
                                 <include reference="blg-Wa-3Wc"/>
                                 <include reference="5x7-J2-vWY"/>
-                                <include reference="ctO-8x-Jd2"/>
                             </mask>
                         </variation>
                     </view>
@@ -1500,9 +1490,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_page" translatesAutoresizingMaskIntoConstraints="NO" id="zql-Jc-hfP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zql-Jc-hfP">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="-3" y="0.0" width="383" height="667"/>
                                 </variation>
                             </imageView>
@@ -1601,12 +1591,15 @@
                                     <outlet property="delegate" destination="V9i-e7-rQG" id="nwm-a8-e7c"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgF-8y-jvu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgF-8y-jvu">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Search"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="168" y="594" width="57" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                    <rect key="frame" x="143" y="546" width="88" height="88"/>
                                 </variation>
                                 <connections>
                                     <action selector="search:" destination="V9i-e7-rQG" eventType="touchUpInside" id="bTF-ab-67J"/>
@@ -1615,9 +1608,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36a-Gv-zEA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Recipe Name"/>
+                                <state key="normal" title="Name">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="38" y="594" width="108" height="34"/>
+                                    <rect key="frame" x="20" y="577" width="108" height="34"/>
                                 </variation>
                                 <connections>
                                     <segue destination="QXB-rY-Yko" kind="show" id="BKz-QQ-bdx"/>
@@ -1648,9 +1643,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZs-CQ-lyz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Ingredients"/>
+                                <state key="normal" title="Ingredients">
+                                    <color key="titleColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="248" y="595" width="91" height="34"/>
+                                    <rect key="frame" x="249" y="574" width="106" height="34"/>
                                 </variation>
                                 <connections>
                                     <segue destination="OYI-n5-2BH" kind="show" id="4Wk-Ex-47R"/>
@@ -1675,6 +1672,7 @@
                             <constraint firstItem="kZs-CQ-lyz" firstAttribute="leading" secondItem="OgF-8y-jvu" secondAttribute="trailing" constant="32" id="K55-Xq-QRQ">
                                 <variation key="widthClass=compact" constant="23"/>
                             </constraint>
+                            <constraint firstItem="zql-Jc-hfP" firstAttribute="leading" secondItem="OgF-8y-jvu" secondAttribute="trailing" constant="-234" id="NxY-7d-Bzx"/>
                             <constraint firstItem="51q-Zi-8da" firstAttribute="leading" secondItem="MuI-mr-LCg" secondAttribute="leadingMargin" constant="-10" id="Yfo-d5-jGy"/>
                             <constraint firstItem="Cau-ZY-rZD" firstAttribute="top" secondItem="3jX-d9-fJq" secondAttribute="bottom" constant="-64" id="cMz-bm-wcW">
                                 <variation key="widthClass=compact" constant="-31"/>
@@ -1698,18 +1696,19 @@
                                 <exclude reference="kZs-CQ-lyz"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="0OZ-AC-cBh"/>
-                                <exclude reference="AsH-OA-X5t"/>
-                                <exclude reference="BlN-lv-c1n"/>
-                                <exclude reference="xAl-VZ-c4j"/>
-                                <exclude reference="kHb-fl-jfX"/>
-                                <exclude reference="K55-Xq-QRQ"/>
-                                <exclude reference="3c5-5g-dwc"/>
-                                <exclude reference="Yfo-d5-jGy"/>
+                                <exclude reference="NxY-7d-Bzx"/>
                                 <exclude reference="03y-13-6gO"/>
                                 <exclude reference="cMz-bm-wcW"/>
                                 <exclude reference="dXw-lr-QIT"/>
                                 <exclude reference="dyo-B8-2cc"/>
+                                <exclude reference="3c5-5g-dwc"/>
+                                <exclude reference="Yfo-d5-jGy"/>
+                                <exclude reference="kHb-fl-jfX"/>
+                                <exclude reference="xAl-VZ-c4j"/>
+                                <exclude reference="K55-Xq-QRQ"/>
+                                <exclude reference="0OZ-AC-cBh"/>
+                                <exclude reference="AsH-OA-X5t"/>
+                                <exclude reference="BlN-lv-c1n"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1722,18 +1721,19 @@
                                 <include reference="kZs-CQ-lyz"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="0OZ-AC-cBh"/>
-                                <include reference="AsH-OA-X5t"/>
-                                <include reference="BlN-lv-c1n"/>
-                                <include reference="xAl-VZ-c4j"/>
-                                <include reference="kHb-fl-jfX"/>
-                                <include reference="K55-Xq-QRQ"/>
-                                <include reference="3c5-5g-dwc"/>
-                                <include reference="Yfo-d5-jGy"/>
+                                <include reference="NxY-7d-Bzx"/>
                                 <exclude reference="03y-13-6gO"/>
                                 <include reference="cMz-bm-wcW"/>
                                 <exclude reference="dXw-lr-QIT"/>
                                 <include reference="dyo-B8-2cc"/>
+                                <include reference="3c5-5g-dwc"/>
+                                <include reference="Yfo-d5-jGy"/>
+                                <include reference="kHb-fl-jfX"/>
+                                <include reference="xAl-VZ-c4j"/>
+                                <include reference="K55-Xq-QRQ"/>
+                                <include reference="0OZ-AC-cBh"/>
+                                <include reference="AsH-OA-X5t"/>
+                                <include reference="BlN-lv-c1n"/>
                             </mask>
                         </variation>
                     </view>
@@ -2104,7 +2104,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="36" width="400" height="564"/>
+                                    <rect key="frame" x="0.0" y="63" width="375" height="564"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="QXB-rY-Yko" id="Orz-zB-LQN"/>
@@ -2130,14 +2130,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ll-RC-ePC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2226" y="1372"/>
+            <point key="canvasLocation" x="-2226.75" y="1371.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="Cancel" width="50" height="50"/>
         <image name="Chicken_Parmesan" width="975" height="706"/>
         <image name="Fruiticon" width="50" height="50"/>
-        <image name="Home_page" width="588" height="907"/>
         <image name="Meaticon" width="50" height="50"/>
         <image name="Ok" width="50" height="50"/>
         <image name="Ox" width="50" height="50"/>
@@ -2146,7 +2145,7 @@
         <image name="SplashBackground" width="741" height="1339"/>
         <image name="SweetSour_Chicken" width="849" height="565"/>
         <image name="Vegicon" width="50" height="50"/>
-        <image name="Yum" width="50" height="50"/>
+        <image name="Yum" width="128" height="128"/>
         <image name="cart" width="50" height="50"/>
         <image name="like" width="43" height="34"/>
         <image name="start timer" width="100" height="100"/>
@@ -2154,7 +2153,6 @@
         <image name="tips" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6Iq-4M-ngq"/>
-        <segue reference="c2F-YV-l8e"/>
+        <segue reference="QX0-De-nKo"/>
     </inferredMetricsTieBreakers>
 </document>

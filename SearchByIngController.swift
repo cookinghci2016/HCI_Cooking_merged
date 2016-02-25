@@ -18,6 +18,10 @@ class SearchByIngController: UIViewController, UICollectionViewDataSource,UIColl
     @IBOutlet weak var Yummy: UIButton!
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+//    @IBAction func btnAction(sender: UIButton) {
+//        sender.setImage(UIImage(named: "Circle"),forState:.Normal)
+//    }
 
     var all_selected_items : [String] = [] {
 //    var all_selected_items : Set<String> = [] {
@@ -59,7 +63,7 @@ class SearchByIngController: UIViewController, UICollectionViewDataSource,UIColl
         let item = all_selected_items[indexPath.row]
         
         cell.DisplayButton.setImage(UIImage(named: item), forState:.Normal)
-        cell.DisplayButton.addTarget(self, action: "btnAction:", forControlEvents: .TouchUpInside)
+//        cell.DisplayButton.addTarget(self, action: "btnAction", forControlEvents: .TouchUpInside)
         return cell
     }
     

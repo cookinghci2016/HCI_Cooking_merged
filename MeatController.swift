@@ -34,9 +34,9 @@ class MeatController: UIViewController,UITableViewDataSource {
         loadSampleMeat()
         
         // Delet all elements during initialization of MeatController
-        let shared_instance = Meat_Singleton.shared_instance
-        shared_instance.selected_meat.removeAll()
-          
+//        let shared_instance = Meat_Singleton.shared_instance
+//        shared_instance.selected_meat.removeAll()
+        
     }
     
     //Search Bar Related
@@ -57,18 +57,18 @@ class MeatController: UIViewController,UITableViewDataSource {
     // MARK:  Inititialization
     func loadSampleMeat() {
         let beef_sub = ["beef_chuck", "beef_loin", "beef_rib","beef_round", "beef_shank"]
-        let beef = IngridentTypes(type : "Beef", photo: UIImage(named: "Ox"), sub_names: beef_sub)!
+        let beef = IngridentTypes(type : "Beef", photo: UIImage(named: "Beef"), sub_names: beef_sub)!
         
         let chick_sub = ["chicken_breast", "chicken_cutlets", "chicken_tender","chicken_wings"]
-        let chick = IngridentTypes(type : "Chick", photo: UIImage(named: "Chicken"), sub_names: chick_sub)!
+        let chick = IngridentTypes(type : "Chicken", photo: UIImage(named: "Chicken"), sub_names: chick_sub)!
         
         let pork_sub = ["pork_breast", "pork_leg", "pork_loin","pork_rib", "pork_shoulder"]
-        let pork = IngridentTypes(type : "Pork", photo: UIImage(named: "Pig"), sub_names: pork_sub)!
+        let pork = IngridentTypes(type : "Pork", photo: UIImage(named: "Pork"), sub_names: pork_sub)!
         
         let lamb_sub = ["lamb_flank", "lamb_leg", "lamb_loin","lamb_rib", "lamb_shoulder"]
-        let lamb = IngridentTypes(type : "Lamb", photo: UIImage(named: "Sheep"), sub_names: lamb_sub)!
+        let lamb = IngridentTypes(type : "Lamb", photo: UIImage(named: "Lamb"), sub_names: lamb_sub)!
         
-        let duck_sub = ["beef_chuck", "beef_loin", "beef_rib","beef_round", "beef_shank"]
+        let duck_sub = ["duck_backbone", "duck_breast", "duck_drumstick","duck_wings"]
         let duck = IngridentTypes(type : "Duck", photo: UIImage(named: "Duck"), sub_names: duck_sub)!
         
         allmeat += [beef, chick, pork, lamb, duck]
@@ -155,10 +155,12 @@ class MeatController: UIViewController,UITableViewDataSource {
             DestViewController.all_selected_items += temp
         }
     }
-
-    @IBAction func back(segue: UIStoryboardSegue) {
-        self.navigationController?.popViewControllerAnimated(true)
-    }
+//
+//    @IBAction func back(segue: UIStoryboardSegue) {
+//        self.navigationController?.popViewControllerAnimated(true)
+//    }
+    
+    
     //    // Failed: Center Section Name for each cell; Must have two sections
     //    func tablevIEW(tableView: UITableView, viewForHeaderInSection section: Int)-> UIView? {
     //        var title : UILabel = UILabel()
