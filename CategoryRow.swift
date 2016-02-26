@@ -55,9 +55,9 @@ extension CategoryRow : UICollectionViewDataSource {
         cell.img_name = nm![indexPath.row]    // Store key attribute of the cell
         cell.section_name = section_name        // Assign section name property to collection View cell
         
-        if indexPath.row == 0 {
-            cell.nameSub.text = "General"
-        }
+//        if indexPath.row == 0 {
+//            cell.nameSub.text = "General"
+//        }
 
         // Choose Background colors based on a global dictionary
         let shared_instance = Meat_Singleton.shared_instance
