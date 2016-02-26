@@ -47,7 +47,7 @@ class RecipeViewController: UIViewController,UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        ScrollView.contentSize.height = 2000
+        ScrollView.contentSize.height = 2500
         
         nameLabel.text = testRecipe.name
         self.recipeImage.image = testRecipe.photo
