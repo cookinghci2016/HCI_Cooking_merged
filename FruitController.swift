@@ -58,15 +58,16 @@ class FruitController: UIViewController,UITableViewDataSource {
     
     // MARK:  Inititialization
     func loadSampleMeat() {
-        let protein_sub = ["protein_noni", "protein_soursop"]
-        let protein = IngridentTypes(type : "Protein Fruit", photo: UIImage(named: "protein_avocado"), sub_names: protein_sub)!
+        // TODO: Bug to be fixed
+        let protein_sub = ["protein_avocado","protein_noni", "protein_soursop"]
+        let protein = IngridentTypes(type : "Protein Fruit", photo: UIImage(named: "Protein Fruit"), sub_names: protein_sub)!
         
 //        let acid_sub = ["acidfruit_kiwi", "acidfruit_mangosteen"]
-        let acid_sub = [ "acidfruit_mangosteen"]
-        let acid = IngridentTypes(type : "Acid Fruit", photo: UIImage(named: "acidfruit_lemon"), sub_names: acid_sub)!
+        let acid_sub = [ "acidfruit_lemon","acidfruit_mangosteen","acidfruit_kiwi"]
+        let acid = IngridentTypes(type : "Acid Fruit", photo: UIImage(named: "Acid Fruit"), sub_names: acid_sub)!
 
-        let subacid_sub = ["subacid_berry", "subacid_grape"]
-        let subacid = IngridentTypes(type : "Subacid Fruit", photo: UIImage(named: "subacid_apple"), sub_names: subacid_sub)!
+        let subacid_sub = ["subacid_apple","subacid_berry", "subacid_grape"]
+        let subacid = IngridentTypes(type : "Subacid Fruit", photo: UIImage(named: "Subacid Fruit"), sub_names: subacid_sub)!
 //
 //        let lamb_sub = ["lamb_flank", "lamb_leg", "lamb_loin","lamb_rib", "lamb_shoulder"]
 //        let lamb = IngridentTypes(type : "Lamb", photo: UIImage(named: "Lamb"), sub_names: lamb_sub)!

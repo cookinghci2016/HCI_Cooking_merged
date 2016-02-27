@@ -42,7 +42,14 @@ class mainViewController: UIViewController,UICollectionViewDataSource,UICollecti
         let photo4 = UIImage(named: "SweetSour_Chicken")!
         let meal4 = Recipe(name: "Sweet and Sour Chicken", photo: photo4, description: "description for recipe 4")!
         
-        meals += [meal1, meal2, meal3, meal4]
+        let photo5 = UIImage(named: "GingerBeefBroccoli")!
+        let meal5 = Recipe(name: "Ginger Beef Broccoli", photo: photo5, description: "")!
+
+        let photo6 = UIImage(named: "HOMESTYLE BEEF STEW")!
+        let meal6 = Recipe(name: "HOMESTYLE BEEF STEW", photo: photo6, description: "")!
+
+        
+        meals += [meal6,meal1, meal2, meal3, meal4, meal5]
     }
 
     override func viewWillAppear(animated: Bool) {

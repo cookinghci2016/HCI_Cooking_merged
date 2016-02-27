@@ -55,14 +55,14 @@ class VegController: UIViewController,UITableViewDataSource {
             
             // MARK:  Inititialization
             func loadSampleMeat() {
-                let leafy_sub = ["leafy_lettuces", "leafy_spinach"]
-                let leafy = IngridentTypes(type : "Leafy", photo: UIImage(named: "leafy_cabbages"), sub_names: leafy_sub)!
+                let leafy_sub = ["leafy_cabbages","leafy_lettuces", "leafy_spinach"]
+                let leafy = IngridentTypes(type : "Leafy", photo: UIImage(named: "Leafy"), sub_names: leafy_sub)!
                 
-          let root_sub = ["root_beet", "root_carrot"]
-          let root = IngridentTypes(type : "Root", photo: UIImage(named: "root_sweetpotato"), sub_names: root_sub)!
+          let root_sub = [ "root_sweetpotato","root_beet", "root_carrot"]
+          let root = IngridentTypes(type : "Root", photo: UIImage(named:"Root"), sub_names: root_sub)!
                 
-            let fruitveg_sub = ["fruitveg_capsicum", "fruitveg_cucumber"]
-            let fruitveg = IngridentTypes(type : "Fruit vegetable", photo: UIImage(named: "fruitveg_tomato"), sub_names: fruitveg_sub)!
+            let fruitveg_sub = ["fruitveg_tomato","fruitveg_capsicum", "fruitveg_cucumber"]
+            let fruitveg = IngridentTypes(type : "Fruit vegetable", photo: UIImage(named: "Fruit vegetable"), sub_names: fruitveg_sub)!
                 allmeat += [leafy,root,fruitveg]
             }
             
