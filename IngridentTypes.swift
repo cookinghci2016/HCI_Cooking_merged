@@ -3,7 +3,7 @@
 //  HCI_recipe
 //
 //  Created by allen woo on 2/22/16.
-//  Copyright © 2016 Jie Tan. All rights reserved.
+//  Copyright © 2016 Chimian Wu. All rights reserved.
 //
 
 import UIKit
@@ -23,9 +23,6 @@ class IngridentTypes: NSObject {
         sub_imgs.append(photo!)
         for img_name in sub_names {
             sub_imgs.append(UIImage(named:img_name)!)
-    }
-//        if type.isEmpty {
-//            return nil
-//        }
+        }
     }
 }

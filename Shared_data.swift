@@ -3,7 +3,7 @@
 //  HCI_recipe
 //
 //  Created by allen woo on 2/24/16.
-//  Copyright © 2016 Jie Tan. All rights reserved.
+//  Copyright © 2016 Chimian Wu. All rights reserved.
 //
 
 // Singleton Instance test

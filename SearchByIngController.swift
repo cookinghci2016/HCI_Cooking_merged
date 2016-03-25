@@ -3,7 +3,7 @@
 //  HCI_recipe
 //
 //  Created by allen woo on 2/20/16.
-//  Copyright © 2016 Je Tan. All rights reserved.
+//  Copyright © 2016 Chimian Wu. All rights reserved.
 //
 
 import UIKit
@@ -19,16 +19,6 @@ class SearchByIngController: UIViewController, UICollectionViewDataSource,UIColl
     
     @IBOutlet weak var collectionView: UICollectionView!
 
-    
-//    @IBAction func ClearItems(sender: UIButton) {
-  //       let shared_instance = Meat_Singleton.shared_instance
-    //    shared_instance.selected_meat.removeAll()
-      //  collectionView.reloadData()
-    //}
-    
-//    @IBAction func btnAction(sender: UIButton) {
-//        sender.setImage(UIImage(named: "Circle"),forState:.Normal)
-//    }
 
     var all_selected_items : [String] = [] {
 //    var all_selected_items : Set<String> = [] {

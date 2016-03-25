@@ -3,7 +3,7 @@
 //  HCI_recipe
 //
 //  Created by Sudikoff Lab iMac on 2/24/16.
-//  Copyright © 2016 Jie Tan. All rights reserved.
+//  Copyright © 2016 Chimian Wu. All rights reserved.
 //
 
 import UIKit
@@ -65,11 +65,9 @@ class SearchByNameTableViewController: UIViewController, UITableViewDataSource, 
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
-
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -87,7 +85,7 @@ class SearchByNameTableViewController: UIViewController, UITableViewDataSource, 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("RecipeNameCell", forIndexPath: indexPath) as UITableViewCell
 
-        // Configure the cell...
+        // MARK: Configure the cell...
         let meal:Recipe
         if searchController.active && searchController.searchBar.text != ""{
             meal = filterdMeals[indexPath.row]
@@ -107,8 +105,8 @@ class SearchByNameTableViewController: UIViewController, UITableViewDataSource, 
 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // Mark: Get the new view controller using segue.destinationViewController.
+        // Mark: Pass the selected object to the new view controller.
         
         let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
         let DestViewController = segue.destinationViewController as! RecipeViewController
